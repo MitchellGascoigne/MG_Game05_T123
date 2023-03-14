@@ -7,22 +7,23 @@ using TMPro;
 
 public class MenuManager : MonoBehaviour
 {
-  
-    void Start()
-    {
-        
-    }
 
+    public GameObject[] menuObjects;
     
-    void Update()
-    {
-        
-    }
-
 
     public void ChangeSceneIndex(int i)
     {
         SceneManager.LoadScene(i);
+    }
+
+    public void TurnOffPanel(int i)
+    {
+        menuObjects[i].gameObject.SetActive(false);
+    }
+
+    public void TurnOnPanel(int i)
+    {
+        menuObjects[(int)i].gameObject.SetActive(true);
     }
 
 }
