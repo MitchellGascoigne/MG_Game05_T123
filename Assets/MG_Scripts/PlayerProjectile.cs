@@ -5,30 +5,81 @@ public class PlayerProjectile : MonoBehaviour
 {
     public GameObject greenFireballPrefab;
     public GameObject redFireballPrefab;
-    public GameObject blueFireballPrefab;
+    public GameObject blueFireballPrefab, MagentaFireballPrefab, YellowFireballPrefab, CyanFireballPrefab;
     public Transform firePoint;
     public float fireballSpeed = 30f;
-    public float spawnWaitTime = 1f;
+    public float spawnWaitTime = 0.5f;
 
     private bool canSpawn = true;
 
     void Update()
     {
-        if (canSpawn)
+
+
+        if (Input.GetKey(KeyCode.R))
         {
-            if (Input.GetKeyDown(KeyCode.R) && !Input.GetKey(KeyCode.G) && !Input.GetKey(KeyCode.B))
+            if (Input.GetKey(KeyCode.G))
             {
-                SpawnProjectile(redFireballPrefab);
+                if(canSpawn)
+                SpawnProjectile(YellowFireballPrefab);
+
             }
-            else if (Input.GetKeyDown(KeyCode.G) && !Input.GetKey(KeyCode.R) && !Input.GetKey(KeyCode.B))
+            else if (Input.GetKey(KeyCode.B))
             {
-                SpawnProjectile(greenFireballPrefab);
+                if (canSpawn)
+                    SpawnProjectile(MagentaFireballPrefab);
             }
-            else if (Input.GetKeyDown(KeyCode.B) && !Input.GetKey(KeyCode.R) && !Input.GetKey(KeyCode.G))
+            else
             {
-                SpawnProjectile(blueFireballPrefab);
+                if (canSpawn)
+                    SpawnProjectile(redFireballPrefab);
+
             }
         }
+
+        if (Input.GetKey(KeyCode.B))
+        {
+            if (Input.GetKey(KeyCode.G))
+            {
+                if (canSpawn)
+                    SpawnProjectile(CyanFireballPrefab);
+
+            }
+            else if(Input.GetKey(KeyCode.R))
+            {
+                if (canSpawn)
+                    SpawnProjectile(MagentaFireballPrefab);
+
+            }
+            else
+            {
+                if (canSpawn)
+                    SpawnProjectile(blueFireballPrefab);
+            }
+        }
+
+        if (Input.GetKey(KeyCode.G))
+        {
+            if (Input.GetKey(KeyCode.B))
+            {
+                if (canSpawn)
+                    SpawnProjectile(CyanFireballPrefab);
+            }
+            else if (Input.GetKey(KeyCode.R))
+            {
+                if (canSpawn)
+                    SpawnProjectile(YellowFireballPrefab);
+            }
+            else
+            {
+                if (canSpawn)
+                    SpawnProjectile(greenFireballPrefab);
+
+            }
+        }
+
+       
+
     }
 
     void SpawnProjectile(GameObject prefab)
@@ -46,3 +97,4 @@ public class PlayerProjectile : MonoBehaviour
         canSpawn = true;
     }
 }
+
