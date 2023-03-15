@@ -128,11 +128,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4496774265276126100, guid: ac8129e77c444d9468318371242d1390, type: 3}
   m_PrefabInstance: {fileID: 4496774265157410538}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &262524647 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7084365146112127318, guid: ea5752325e00e2348a2ca7addc670672, type: 3}
-  m_PrefabInstance: {fileID: 7084365146068238257}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &269164142 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 546116398183354202, guid: 6bc7aedef2de5774a80c403b8d3908e4, type: 3}
@@ -839,7 +834,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 826001861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.08, y: -2.0282393, z: 0}
+  m_LocalPosition: {x: -8.44, y: -2.0282393, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1007,32 +1002,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 896986819}
   m_CullTransparentMesh: 1
---- !u!1 &1004493289 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4496774266100647683, guid: ac8129e77c444d9468318371242d1390, type: 3}
-  m_PrefabInstance: {fileID: 4496774265157410538}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1004493292
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1004493289}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dbf6aeb18d2f8f4bbc0685c14742381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefabs: []
-  minSpawnDelay: 2
-  maxSpawnDelay: 8
-  spawnY: 0
---- !u!1 &1077711296 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3196089584501790870, guid: f76aeae8fc0c0bd4db0dcf4d24786aa7, type: 3}
-  m_PrefabInstance: {fileID: 3196089585577920854}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1137968145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1843,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1722987542}
-  - component: {fileID: 1722987541}
   m_Layer: 0
   m_Name: LaserSpawner
   m_TagString: Untagged
@@ -1882,28 +1850,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1722987541
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1722987540}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6dbf6aeb18d2f8f4bbc0685c14742381, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  laserPrefabs:
-  - {fileID: 1004493289}
-  - {fileID: 1878874321}
-  - {fileID: 1077711296}
-  - {fileID: 1915838691}
-  - {fileID: 1939916760}
-  - {fileID: 262524647}
-  minSpawnDelay: 2
-  maxSpawnDelay: 8
-  spawnY: 0
 --- !u!4 &1722987542
 Transform:
   m_ObjectHideFlags: 0
@@ -1924,25 +1870,10 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4825605561447701214, guid: 4a775846f0b3b9f4d91c2c5a1a42c7e7, type: 3}
   m_PrefabInstance: {fileID: 4825605559948249291}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1878874321 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5078841487851555672, guid: 9be900a6a0044e044b1c099a81a41908, type: 3}
-  m_PrefabInstance: {fileID: 5078841488592720777}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1915838691 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5898819479585335275, guid: 8da3a0fe03ccf9340aa3297f5b1fd6a3, type: 3}
-  m_PrefabInstance: {fileID: 5898819479821338376}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1931935039 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5898819479600708151, guid: 8da3a0fe03ccf9340aa3297f5b1fd6a3, type: 3}
   m_PrefabInstance: {fileID: 5898819479821338376}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1939916760 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4825605561804214035, guid: 4a775846f0b3b9f4d91c2c5a1a42c7e7, type: 3}
-  m_PrefabInstance: {fileID: 4825605559948249291}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2069426773 stripped
 Transform:
