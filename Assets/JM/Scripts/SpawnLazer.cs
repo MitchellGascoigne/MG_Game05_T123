@@ -43,6 +43,11 @@ public class SpawnLazer : MonoBehaviour
 
         Debug.Log("method spawned a laser of index " + index + " at the location of " + newSpawn);
 
+        lazerSpawnDelay = Random.Range(3f, 6f);
+
+
+        distanceBetweenSpawns = Random.Range(15, 25);
+
         newSpawn.x += distanceBetweenSpawns;
 
         StartCoroutine(RandomLazerSpawner());

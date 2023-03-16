@@ -1789,7 +1789,23 @@ MonoBehaviour:
   - {fileID: -343216081403469228, guid: 627af2aeac77fa240829a35767492ac8, type: 3}
   - {fileID: -6474706273203330080, guid: d7ce1fe88342f35488bb9d914821c702, type: 3}
   - {fileID: 2921681741368639063, guid: 80a8dec59a71b3948a95a51de90f39f1, type: 3}
-  loseSceneName: MainMenu
+  loseScene: {fileID: 428743636}
+--- !u!70 &1615124999
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615124989}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.02669775, y: -0.07566954}
+  m_Size: {x: 3.7450416, y: 1.6089141}
+  m_Direction: 1
 --- !u!1 &1631124180
 GameObject:
   m_ObjectHideFlags: 0
