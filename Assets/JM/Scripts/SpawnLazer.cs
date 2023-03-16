@@ -28,11 +28,17 @@ public class SpawnLazer : MonoBehaviour
 
     public IEnumerator RandomLazerSpawner()
     {
-        
+        Debug.Log("Random Lazer Spawner method called.");
 
         yield return new WaitForSeconds(lazerSpawnDelay);
 
-        Instantiate(lazers[Random.Range(0, lazers.Length)], newSpawn, Quaternion.identity);
+        Debug.Log("method waited for " + lazerSpawnDelay + " seconds");
+
+        int index = Random.Range(0, lazers.Length);
+
+        Instantiate(lazers[index], newSpawn, Quaternion.identity);
+
+        Debug.Log("method spawned a laser of index " + index + " at the location of " + newSpawn);
 
         newSpawn.x += distanceBetweenSpawns;
 
