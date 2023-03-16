@@ -1769,6 +1769,27 @@ MonoBehaviour:
   firePoint: {fileID: 669166838}
   fireballSpeed: 30
   spawnWaitTime: 1
+--- !u!114 &1615124995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615124989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e41a9af85e51c644b1d2cf07f3499d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  impactPrefab: {fileID: 7878886371443294157, guid: eb2434247fb29f347aef3ca6fed253df, type: 3}
+  laserColliders:
+  - {fileID: -8077904178514950043, guid: 54ee9186ad1e45c4cb8c94cf450a70c1, type: 3}
+  - {fileID: -8461471799219315990, guid: ce719c18d7d7ba448a79e106e46bbf65, type: 3}
+  - {fileID: 6564896793432163645, guid: a4b65d23719e8a042a38d4617ed61f56, type: 3}
+  - {fileID: -343216081403469228, guid: 627af2aeac77fa240829a35767492ac8, type: 3}
+  - {fileID: -6474706273203330080, guid: d7ce1fe88342f35488bb9d914821c702, type: 3}
+  - {fileID: 2921681741368639063, guid: 80a8dec59a71b3948a95a51de90f39f1, type: 3}
+  loseSceneName: MainMenu
 --- !u!1 &1631124180
 GameObject:
   m_ObjectHideFlags: 0
