@@ -3,6 +3,7 @@ using System.Collections;
 
 public class PlayerProjectile : MonoBehaviour
 {
+    
     public GameObject greenFireballPrefab;
     public GameObject redFireballPrefab;
     public GameObject blueFireballPrefab, MagentaFireballPrefab, YellowFireballPrefab, CyanFireballPrefab;

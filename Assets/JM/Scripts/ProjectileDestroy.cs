@@ -20,4 +20,6 @@ public class ProjectileDestroy : MonoBehaviour
         Destroy(this.gameObject);
     }
 
+   
+
 }

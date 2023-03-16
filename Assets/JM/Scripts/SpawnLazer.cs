@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class SpawnLazer : MonoBehaviour
 {
+    public TMPro.TextMeshProUGUI tmpScoreText;
+    private int playerScore;
 
     public GameObject[] lazers;
     public Transform initialSpawnPoint;
@@ -16,6 +18,7 @@ public class SpawnLazer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        playerScore = 0;
         newSpawn = initialSpawnPoint.position;
         StartCoroutine(RandomLazerSpawner());
     }
@@ -43,6 +46,12 @@ public class SpawnLazer : MonoBehaviour
         newSpawn.x += distanceBetweenSpawns;
 
         StartCoroutine(RandomLazerSpawner());
+    }
+
+    public void ChangeScorebyIncrement(int i)
+    {
+        playerScore += i;
+        tmpScoreText.text = playerScore.ToString();
     }
   
 }
