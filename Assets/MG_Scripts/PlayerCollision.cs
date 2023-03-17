@@ -9,6 +9,8 @@ public class PlayerCollision : MonoBehaviour
     public GameObject impactPrefab;
     public Collider2D[] laserColliders;
     public GameObject loseScene;
+    private float timer = 3;
+    private bool isdead;
 
     //private void OnTriggerEnter2D(Collider2D collision)
     //{
@@ -38,11 +40,20 @@ public class PlayerCollision : MonoBehaviour
     //    return false;
     //}
 
+    
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Instantiate(impactPrefab, transform.position, Quaternion.identity);
+        if (collision.gameObject.tag == "Blue" || collision.gameObject.tag == "Red" || collision.gameObject.tag == "Green" || collision.gameObject.tag == "Cyan" || collision.gameObject.tag == "Magenta" || collision.gameObject.tag == "Yellow")
+        {
+            Instantiate(impactPrefab, transform.position, Quaternion.identity);
+            StartCoroutine(DelaySpawn());
+        }
+    }
 
-        loseScene.gameObject.SetActive(true);
+    private IEnumerator DelaySpawn()
+    {
+        yield return new WaitForSeconds(3f);
 
+        loseScene.SetActive(true);
     }
 }

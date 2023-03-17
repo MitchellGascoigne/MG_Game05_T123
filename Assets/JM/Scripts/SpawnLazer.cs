@@ -46,7 +46,7 @@ public class SpawnLazer : MonoBehaviour
         lazerSpawnDelay = Random.Range(3f, 6f);
 
 
-        distanceBetweenSpawns = Random.Range(15, 25);
+        distanceBetweenSpawns = Random.Range(5, 10);
 
         newSpawn.x += distanceBetweenSpawns;
 
